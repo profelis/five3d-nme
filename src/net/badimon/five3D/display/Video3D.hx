@@ -151,7 +151,7 @@ class Video3D extends Bitmap3D {
 	/**
 	 * @private
 	 */
-	override public var _bitmapData(getBitmapData, setBitmapData):BitmapData;
+	//override public var _bitmapData(getBitmapData, setBitmapData):BitmapData;
 
 	override private function getBitmapData():BitmapData {
 		throw "The Video3D class does not implement this property or method.";

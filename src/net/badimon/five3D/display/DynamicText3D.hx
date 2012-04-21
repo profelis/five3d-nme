@@ -225,8 +225,6 @@ class DynamicText3D extends Sprite3D {
 	/**
 	 * @private
 	 */
-	override public var _graphics3D(getGraphics3D, null):Graphics3D;
-
 	override private function getGraphics3D():Graphics3D {
 		throw "The DynamicText3D class does not implement this property or method.";
 		return null;

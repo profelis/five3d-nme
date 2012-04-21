@@ -336,7 +336,7 @@ class MovieClip3D extends Sprite3D {
 	/**
 	 * @private
 	 */
-	override public var _childrenSorted(getChildrenSorted, setChildrenSorted):Bool;
+	//override public var _childrenSorted(getChildrenSorted, setChildrenSorted):Bool;
 
 	override private function getChildrenSorted():Bool {
 		throw "The MovieClip3D class does not implement this property or method.";
