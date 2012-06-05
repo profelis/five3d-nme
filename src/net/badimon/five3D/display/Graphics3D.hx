@@ -24,7 +24,7 @@ import flash.geom.Vector3D;
  */
 class Graphics3D {
 
-	private var __motif:Array<Dynamic>;
+	private var __motif:Array<Array<Dynamic>>;
 	private var __render:Bool;
 
 	/**
@@ -228,7 +228,8 @@ class Graphics3D {
 	 * @param miterLimit		The limit at which a miter is cut off.
 	 */
 	public function lineStyle(thickness:Float = 1.0, color:UInt = 0, alpha:Float = 1.0, pixelHinting:Bool = false, scaleMode:String = "normal", caps:String = null, joints:String = null, miterLimit:Float = 3):Void {
-		__motif.push(['S', [thickness, color, alpha, pixelHinting, scaleMode, caps, joints, miterLimit]]);
+		var a:Array<Dynamic> = [thickness, color, alpha, pixelHinting, scaleMode, caps, joints, miterLimit];
+		__motif.push(['S', a]);
 		askRendering();
 	}
 
@@ -296,7 +297,7 @@ class Graphics3D {
 	 * @param motif		The drawing instructions (motif) to be added.
 	 * 
 	 */
-	public function addMotif(motif:Array<Dynamic>):Void {
+	public function addMotif(motif:Array<Array<Dynamic>>):Void {
 		__motif = __motif.concat(motif);
 		askRendering();
 	}
@@ -379,8 +380,8 @@ class Graphics3D {
 	 * 
 	 * @param motif		The drawing instructions (motif) to be cloned.
 	 */
-	public static function clone(motif:Array<Dynamic>):Array<Dynamic> {
-		var motif2:Array<Dynamic> = [];
+	public static function clone(motif:Array<Array<Dynamic>>):Array<Array<Dynamic>> {
+		var motif2:Array<Array<Dynamic>> = [];
 		var i:UInt;
 		var len:UInt = motif.length;
 		var instruction:Array<Dynamic>;

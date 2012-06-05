@@ -5,7 +5,7 @@
 		version="1.0.0" company="deep" />
 		
 	<!-- output -->
-	<window width="600" height="300" fps="60" orientation="portrait" resizable="true" antialiasing="2" />
+	<window width="600" height="300" fps="60" orientation="portrait" resizable="true" antialiasing="4" />
 	<set name="BUILD_DIR" value="bin" />
 	
 	<!-- classpath, haxe libs -->
@@ -21,6 +21,9 @@
 	<ndll name="regexp" />
 	<ndll name="zlib" />
 	<ndll name="nme" haxelib="nme" />
+
+	<ios deployment="3.2" binaries="armv7" devices="universal" />
+	
 	
 	<!-- Windows app: hide console -->
 	<!--<setenv name="no_console" value="1" />-->

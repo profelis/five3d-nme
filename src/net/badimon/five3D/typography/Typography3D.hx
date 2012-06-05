@@ -15,7 +15,7 @@ package net.badimon.five3D.typography;
  */
 class Typography3D {
 
-	private var motifs:Hash<Array<Dynamic>>;
+	private var motifs:Hash<Array<Array<Dynamic>>>;
 	private var widths:Hash<Float>;
 	private var height:Float;
 
@@ -23,8 +23,8 @@ class Typography3D {
 	 * Creates a new Sprite3D instance.
 	 */
 	public function new() {
-		motifs = new Hash<Array<Dynamic>>();
-		widths = new Hash<Float>();
+		motifs = new Hash();
+		widths = new Hash();
 	}
 
 	/**
@@ -32,7 +32,7 @@ class Typography3D {
 	 * 
 	 * @param char	The character of which the motif will be returned.
 	 */
-	public function getMotif(char:String):Array<Dynamic> {
+	public function getMotif(char:String):Array<Array<Dynamic>> {
 		return motifs.get(char);
 	}
 

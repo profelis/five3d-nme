@@ -31,7 +31,7 @@ import flash.Vector;
  */
 class InternalUtils {
 
-	public static inline var RAD_TO_DEG:Float = 180 / Math.PI;
+	public static inline var RAD_TO_DEG:Float = 57.29577951308232; //180 / Math.PI;
 
 	public static function formatRotation(angle:Float):Float {
 		if (angle >= -180 && angle <= 180) return angle;
