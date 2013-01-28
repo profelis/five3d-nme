@@ -28,7 +28,9 @@
 
 package jeash.geom;
 
-import Html5Dom;
+#if js
+import browser.Html5Dom;
+#end
 import nme.geom.Vector3D;
 
 //some of the code below is modified from sandy3d and five3d

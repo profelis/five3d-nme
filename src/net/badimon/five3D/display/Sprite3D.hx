@@ -19,7 +19,7 @@ import flash.geom.Point;
 import flash.geom.Vector3D;
 
 #if js
-import Html5Dom;
+import browser.Html5Dom;
 #else
 import flash.Vector;
 #end

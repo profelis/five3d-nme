@@ -11,7 +11,7 @@ http://five3D.mathieu-badimon.com  |  http://five3d.mathieu-badimon.com/archives
 package net.badimon.five3D.display;
 
 #if js
-import Html5Dom;
+import browser.Html5Dom;
 #end
 import flash.display.Sprite;
 import flash.events.Event;

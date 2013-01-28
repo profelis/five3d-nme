@@ -2,11 +2,10 @@
 <project>
 	<!-- metadata, make sure 'package' is at least 2 segments (ie. com.myproject) -->
 	<app file="five3d-nme" title="five3D" main="Main" package="org.deep.test" 
-		version="1.0.0" company="deep" />
+		version="1.0.0" company="deep" path="bin" />
 		
 	<!-- output -->
-	<window width="600" height="300" fps="60" orientation="portrait" resizable="true" antialiasing="4" />
-	<set name="BUILD_DIR" value="bin" />
+	<window width="600" height="300" fps="60" orientation="portrait" resizable="true" antialiasing="8" />
 	
 	<!-- classpath, haxe libs -->
 	<classpath name="src" />
@@ -17,9 +16,6 @@
 	<assets path="assets" include="*" exclude="nme.svg" />
 	
 	<!-- DLLs -->
-	<ndll name="std" />
-	<ndll name="regexp" />
-	<ndll name="zlib" />
 	<ndll name="nme" haxelib="nme" />
 
 	<ios deployment="3.2" binaries="armv7" devices="universal" />

@@ -16,7 +16,7 @@ import flash.display.Sprite;
 import flash.geom.Matrix3D;
 
 #if js
-import Html5Dom;
+import browser.Html5Dom;
 #else
 import flash.Vector;
 #end
